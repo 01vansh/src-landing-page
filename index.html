@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shree Ram Colddrinks — Refreshing Since 1998 | Fresh Mojitos, Lassi, Milkshakes & More</title>
+  <meta name="description" content="Shree Ram Colddrinks — Gujarat's favorite cold drinks shop since 1998. Fresh mojitos, lassi, milkshakes, crushes, and 15+ pure sugar syrup flavors. Order on WhatsApp!" />
+  <meta name="keywords" content="cold drinks, mojito, lassi, milkshake, crush, syrups, Shree Ram Colddrinks, Gujarat beverages" />
+  <meta name="theme-color" content="#4cb745" />
+  <link rel="icon" type="image/png" href="images/shop images/logo.png" />
+  <link rel="stylesheet" href="styles.css?v=1.0.5" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+       ============================================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#home" class="header__logo" aria-label="Shree Ram Colddrinks Home">
+        <img src="images/shop images/logo.png" alt="Shree Ram Colddrinks Logo" />
+      </a>
+
+      <nav class="header__nav">
+        <div class="header__nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#bestsellers">Bestsellers</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#syrups">Syrups</a>
+          <a href="#location">Location</a>
+        </div>
+
+        <a href="#instant-order-section" id="headerOrderBtn" class="btn-whatsapp" aria-label="Order Now">
+          <!-- WhatsApp SVG icon -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Order Now
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mobile-menu__link">Home</a>
+    <a href="#about" class="mobile-menu__link">About</a>
+    <a href="#bestsellers" class="mobile-menu__link">Bestsellers</a>
+    <a href="#menu" class="mobile-menu__link">Menu</a>
+    <a href="#gallery" class="mobile-menu__link">Gallery</a>
+    <a href="#syrups" class="mobile-menu__link">Syrups</a>
+    <a href="#location" class="mobile-menu__link">Location</a>
+    <a href="#instant-order-section" id="mobileMenuOrderBtn" class="btn-whatsapp">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Order Now
+    </a>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION — Video Frame Box with Horizontal Overlay
+       ============================================================ -->
+  <section class="hero hero--video" id="home">
+    <div class="hero__video-box">
+      <!-- Full-bleed Video Background -->
+      <video id="heroVideo" src="video/0704(1).mp4" autoplay muted loop playsinline preload="auto"></video>
+
+      <!-- Glass Overlay Inside Video Frame (Red Box Area) -->
+      <div class="hero__overlay-container">
+        <div class="hero__pro-glass-card">
+          
+          <!-- Established Badge -->
+          <div class="hero__pro-badge">
+            <span class="badge-dot"></span>
+            <span>ESTABLISHED 1984 • SURAT</span>
+          </div>
+
+          <!-- 4 Features Horizontal Grid (2x2 Columns) -->
+          <div class="hero__pro-features-grid">
+            
+            <!-- 1. 40+ Years -->
+            <div class="hero__pro-feature-item">
+              <div class="hero__pro-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div class="hero__pro-feature-content">
+                <strong class="hero__pro-feature-val">40+ Years</strong>
+                <span class="hero__pro-feature-lbl">Legacy</span>
+              </div>
+            </div>
+
+            <!-- 2. Handcrafted -->
+            <div class="hero__pro-feature-item">
+              <div class="hero__pro-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+              </div>
+              <div class="hero__pro-feature-content">
+                <strong class="hero__pro-feature-val">Fresh</strong>
+                <span class="hero__pro-feature-lbl">Handcrafted</span>
+              </div>
+            </div>
+
+            <!-- 3. Premium Quality -->
+            <div class="hero__pro-feature-item">
+              <div class="hero__pro-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <div class="hero__pro-feature-content">
+                <strong class="hero__pro-feature-val">Premium</strong>
+                <span class="hero__pro-feature-lbl">Best Quality</span>
+              </div>
+            </div>
+
+            <!-- 4. 100+ Drinks -->
+            <div class="hero__pro-feature-item">
+              <div class="hero__pro-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              </div>
+              <div class="hero__pro-feature-content">
+                <strong class="hero__pro-feature-val">100+ Drinks</strong>
+                <span class="hero__pro-feature-lbl">All Flavors</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- View Menu CTA Button -->
+          <a href="#menu" class="hero__pro-cta-btn">
+            <span>View Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <section class="about" id="about" style="display: none;">
+    <div class="container">
+      <!-- Hidden top section (as requested: do not remove, just hide) -->
+      <div class="about__intro-wrapper" style="display: none;">
+        <span class="accent-line reveal"></span>
+        <h2 class="section-title reveal">About Us</h2>
+        <p class="section-subtitle reveal">Handcrafted beverages, made fresh every single day</p>
+
+        <div class="about__content reveal">
+          <p class="about__text">
+            Since <strong>1998</strong>, Shree Ram Colddrinks has been serving the freshest, most flavorful cold beverages in town. Every drink is crafted from scratch using <strong>fresh ingredients</strong>, our signature <strong>pure sugar syrups</strong>, and absolutely <strong>no preservatives</strong>. What started as a small shop has grown into a beloved local destination — trusted by thousands of customers who keep coming back for that authentic, pure sugar taste.
+          </p>
+        </div>
+
+        <div class="about__trust reveal-stagger">
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">🌿</div>
+            <div class="trust-card__number">FRESH</div>
+            <div class="trust-card__label">Made Fresh Daily</div>
+          </div>
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">📋</div>
+            <div class="trust-card__number">9</div>
+            <div class="trust-card__label">Drink Categories</div>
+          </div>
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">🥤</div>
+            <div class="trust-card__number">100+</div>
+            <div class="trust-card__label">Unique Flavors</div>
+          </div>
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">🍯</div>
+            <div class="trust-card__number">15+</div>
+             <div class="trust-card__label">Pure Sugar Syrups</div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HISTORY SCROLL TIMELINE — Pinned Scroll Deck
+       ============================================================ -->
+  <section class="history-scroll-container" id="history">
+    <div class="history-sticky-wrapper">
+      
+      <!-- Glowing background blobs for premium glassmorphism effect -->
+      <div class="hs-blob hs-blob--1"></div>
+      <div class="hs-blob hs-blob--2"></div>
+      <div class="hs-blob hs-blob--3"></div>
+
+      <!-- Desktop section intro above the timeline card -->
+      <div class="hs-desktop-intro">
+        <span class="accent-line reveal"></span>
+        <h2 class="section-title reveal">Roots &amp; Rise</h2>
+        <p class="section-subtitle reveal">40 Years of Pure Refreshment</p>
+      </div>
+
+      <!-- Outer Box wrapper (clean layout wrapper, border-less) -->
+      <div class="hs-outer-box">
+
+        <!-- Mobile-only section intro above the timeline card -->
+        <div class="hs-mobile-intro">
+          <span class="hs-mobile-intro__eyebrow">Roots &amp; Rise</span>
+          <h2 class="hs-mobile-intro__title">40 Years of Pure Refreshment</h2>
+        </div>
+        
+        <!-- Inside card matches cellini video sample exactly -->
+        <div class="hs-card-widget" id="hsWidget">
+        
+        <!-- Top Nav Bar: Years separated by vertical bars | plus a thin X close button -->
+        <div class="hs-card-header">
+          <nav class="hs-card-nav" id="hsNav">
+            <button class="hs-card-nav__btn active" data-slide="0">1984</button>
+            <span class="hs-card-nav__sep">|</span>
+            <button class="hs-card-nav__btn" data-slide="1">1998</button>
+            <span class="hs-card-nav__sep">|</span>
+            <button class="hs-card-nav__btn" data-slide="2">2005</button>
+            <span class="hs-card-nav__sep">|</span>
+            <button class="hs-card-nav__btn" data-slide="3">2015</button>
+            <span class="hs-card-nav__sep">|</span>
+            <button class="hs-card-nav__btn" data-slide="4">today</button>
+            
+            <!-- Sliding active indicator line -->
+            <div class="hs-card-nav__indicator" id="hsNavIndicator"></div>
+          </nav>
+        <!-- Thin X button on top right of the card (decorative/reset) -->
+          <button class="hs-card-close" id="hsClose" aria-label="Close timeline">×</button>
+        </div>
+
+        <div class="hs-card-slides" id="hsSlides">
+
+          <!-- Slide 0: 1984 -->
+          <div class="hs-card-slide active" data-index="0">
+            <div class="hs-card-slide__watermark">1984</div>
+            <div class="hs-card-slide__grid">
+              <!-- Image hero (top on mobile, right on desktop) -->
+              <div class="hs-card-slide__right">
+                <div class="hs-card-slide__img-box hs-card-slide__img-box--large">
+                  <img src="images/shop images/shop image 1  (1).webp" alt="Old Surat Streets" class="hs-card-slide__img">
+                </div>
+                <p class="hs-card-slide__caption">
+                  Every single lemon was hand-pressed and served with a smile. This became the foundation of our commitment to freshness.
+                </p>
+              </div>
+              <!-- Text panel (bottom on mobile, left on desktop) -->
+              <div class="hs-card-slide__left">
+                <span class="hs-card-slide__eyebrow">OUR ORIGINS</span>
+                <h4 class="hs-card-slide__title">The Soda Cart Origins</h4>
+                <p class="hs-card-slide__body">
+                  In the spring of 1984, our founder started a humble hand-squeezed soda cart on the streets of Surat, serving fresh, chilled soda with local citrus fruits and secret spice blends.
+                </p>
+                <div class="hs-card-slide__img-box hs-card-slide__img-box--small">
+                  <img src="images/items images/item images/lemon tukda soda.png" alt="Soda Cart Origins" class="hs-card-slide__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 1: 1998 -->
+          <div class="hs-card-slide" data-index="1">
+            <div class="hs-card-slide__watermark">1998</div>
+            <div class="hs-card-slide__grid">
+              <div class="hs-card-slide__right">
+                <div class="hs-card-slide__img-box hs-card-slide__img-box--large">
+                  <img src="images/shop images/shop image 1  (2).webp" alt="First Storefront" class="hs-card-slide__img">
+                </div>
+                <p class="hs-card-slide__caption">
+                  Transitioning from a cart to a registered local brand while preserving the original family recipe.
+                </p>
+              </div>
+              <div class="hs-card-slide__left">
+                <span class="hs-card-slide__eyebrow">FIRST PERMANENT SHOP</span>
+                <h4 class="hs-card-slide__title">First Storefront &amp; Bottling</h4>
+                <p class="hs-card-slide__body">
+                   In 1998, we established our first permanent brick-and-mortar shop. This landmark year marked the birth of bottling our signature pure sugar syrups to share with the neighborhood.
+                </p>
+                <div class="hs-card-slide__img-box hs-card-slide__img-box--small">
+                  <img src="images/items images/item images/chas soda.png" alt="Thriving storefront" class="hs-card-slide__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: 2005 -->
+          <div class="hs-card-slide" data-index="2">
+            <div class="hs-card-slide__watermark">2005</div>
+            <div class="hs-card-slide__grid">
+              <div class="hs-card-slide__right">
+                <div class="hs-card-slide__img-box hs-card-slide__img-box--large">
+                  <img src="images/items images/item images/mint mojito.png" alt="Mint Mojito" class="hs-card-slide__img">
+                </div>
+                <p class="hs-card-slide__caption">
+                  Expanding the family recipe card to cater to changing taste trends without losing our heritage.
+                </p>
+              </div>
+              <div class="hs-card-slide__left">
+                <span class="hs-card-slide__eyebrow">MENU EXPANSION</span>
+                <h4 class="hs-card-slide__title">50+ Flavors Introduced</h4>
+                <p class="hs-card-slide__body">
+                  We diversified our offering to include mojitos, premium lassis, and thick milkshakes, bridging modern taste preferences with traditional, time-tested recipes.
+                </p>
+                <div class="hs-card-slide__img-box hs-card-slide__img-box--small">
+                  <img src="images/items images/item images/sp. lassi.png" alt="Traditional Lassi" class="hs-card-slide__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: 2015 -->
+          <div class="hs-card-slide" data-index="3">
+            <div class="hs-card-slide__watermark">2015</div>
+            <div class="hs-card-slide__grid">
+              <div class="hs-card-slide__right">
+                <div class="hs-card-slide__img-box hs-card-slide__img-box--large">
+                  <img src="images/shop images/shop image 1  (1).webp" alt="Shree Ram Premium Outlet" class="hs-card-slide__img">
+                </div>
+                <p class="hs-card-slide__caption">
+                  Improving comfort and layout standards, serving thousands of guests daily with unmatched consistency.
+                </p>
+              </div>
+              <div class="hs-card-slide__left">
+                <span class="hs-card-slide__eyebrow">PREMIUM STANDARDS</span>
+                <h4 class="hs-card-slide__title">Modern Outlets &amp; Hygiene</h4>
+                <p class="hs-card-slide__body">
+                  We upgraded our locations to premium, hygienic modern outlets. We integrated advanced cooling equipment to keep every glass pure, refreshing, and entirely preservative-free.
+                </p>
+                <div class="hs-card-slide__img-box hs-card-slide__img-box--small">
+                  <img src="images/items images/item images/rose milk shake.png" alt="Quality Standard" class="hs-card-slide__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Today -->
+          <div class="hs-card-slide" data-index="4">
+            <div class="hs-card-slide__watermark">today</div>
+            <div class="hs-card-slide__grid">
+              <div class="hs-card-slide__right">
+                <div class="hs-card-slide__img-box hs-card-slide__img-box--large">
+                  <img src="images/shop images/shop image 1  (2).webp" alt="Modern Team and Family" class="hs-card-slide__img">
+                </div>
+                <p class="hs-card-slide__caption">
+                  40+ years of legacy, 100+ flavors, and a family of loyal patrons — still handcrafted, still fresh.
+                </p>
+              </div>
+              <div class="hs-card-slide__left">
+                <span class="hs-card-slide__eyebrow">LA VITA. LA PASSIONE.</span>
+                <h4 class="hs-card-slide__title">A Legacy of Handcrafted Love</h4>
+                <p class="hs-card-slide__body">
+                  The experiences of our long past have in no way slowed down our growth. Rather, they serve as a springboard for an innovative, passionate spirit that every member of the Shree Ram team embodies today.
+                </p>
+                <div class="hs-card-slide__img-box hs-card-slide__img-box--small">
+                  <img src="images/items images/item images/sp. coco.png" alt="Today at Shree Ram" class="hs-card-slide__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div><!-- /.hs-card-slides -->
+
+      </div><!-- /.hs-card-widget -->
+      </div><!-- /.hs-outer-box -->
+    </div><!-- /.history-sticky-wrapper -->
+  </section>
+
+  <!-- ============================================================
+       BESTSELLERS SECTION
+       ============================================================ -->
+  <section class="bestsellers" id="bestsellers">
+    <div class="container">
+      <span class="accent-line reveal"></span>
+      <h2 class="section-title reveal">Our Bestsellers</h2>
+      <p class="section-subtitle reveal">The drinks our customers can't stop ordering</p>
+    </div>
+
+    <!-- Infinite horizontal marquee container -->
+    <div class="bestsellers__marquee-container">
+      <div class="bestsellers__marquee-track">
+        
+        <!-- ================= ORIGINAL ITEMS ================= -->
+        <!-- 1. Limbu Tukda Sarbat -->
+        <div class="drink-card" id="drink-limbu">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/lemon tukda soda.png" alt="Limbu Tukda Sarbat" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Limbu Tukda Sarbat</h3>
+            <p class="drink-card__category">Lime Flavors</p>
+          </div>
+        </div>
+
+        <!-- 2. Lemon Ice Tea -->
+        <div class="drink-card" id="drink-lemon-tea">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/lemon ice tea.png" alt="Lemon Ice Tea" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Lemon Ice Tea</h3>
+            <p class="drink-card__category">Lime Flavors</p>
+          </div>
+        </div>
+
+        <!-- 3. Coffee -->
+        <div class="drink-card" id="drink-coffee">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/coffee.png" alt="Iced Coffee" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Cold Coffee</h3>
+            <p class="drink-card__category">Coffee</p>
+          </div>
+        </div>
+
+        <!-- 4. Chaas Soda -->
+        <div class="drink-card" id="drink-chaas">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/chas soda.png" alt="Chaas Soda" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Chaas Soda</h3>
+            <p class="drink-card__category">Chaas Soda</p>
+          </div>
+        </div>
+
+        <!-- 5. Mojito -->
+        <div class="drink-card" id="drink-mojito">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/mint mojito.png" alt="Fresh Mojito" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Mint Mojito</h3>
+            <p class="drink-card__category">Mojitos</p>
+          </div>
+        </div>
+
+        <!-- 6. Special Lassi -->
+        <div class="drink-card" id="drink-lassi">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/sp. lassi.png" alt="Special Lassi" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Special Lassi</h3>
+            <p class="drink-card__category">Lassi</p>
+          </div>
+        </div>
+
+        <!-- 7. Special Coco -->
+        <div class="drink-card" id="drink-coco">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/sp. coco.png" alt="Special Coco" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Special Coco</h3>
+            <p class="drink-card__category">Coco</p>
+          </div>
+        </div>
+
+        <!-- 8. Rose Milkshake -->
+        <div class="drink-card" id="drink-rose">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/rose milk shake.png" alt="Rose Milkshake" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Rose Milkshake</h3>
+            <p class="drink-card__category">Milkshakes</p>
+          </div>
+        </div>
+
+        <!-- 9. Bournvita Milkshake -->
+        <div class="drink-card" id="drink-bournvita">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/bornvitta milk shake.png" alt="Bournvita Milkshake" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Bournvita Milkshake</h3>
+            <p class="drink-card__category">Milkshakes</p>
+          </div>
+        </div>
+
+        <!-- 10. Kiwi Crush -->
+        <div class="drink-card" id="drink-kiwi">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/kiwi crush soda.png" alt="Kiwi Crush" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Kiwi Crush</h3>
+            <p class="drink-card__category">Crush Items</p>
+          </div>
+        </div>
+
+        <!-- 11. Black Currant Crush -->
+        <div class="drink-card" id="drink-blackcurrant">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/black current.png" alt="Black Currant Crush" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Black Currant Crush</h3>
+            <p class="drink-card__category">Crush Items</p>
+          </div>
+        </div>
+
+        <!-- ================= DUPLICATED ITEMS (For seamless infinite marquee scroll) ================= -->
+        <!-- 1. Limbu Tukda Sarbat (Dup) -->
+        <div class="drink-card drink-card--dup">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/lemon tukda soda.png" alt="Limbu Tukda Sarbat" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Limbu Tukda Sarbat</h3>
+            <p class="drink-card__category">Lime Flavors</p>
+          </div>
+        </div>
+
+        <!-- 2. Lemon Ice Tea (Dup) -->
+        <div class="drink-card drink-card--dup">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/lemon ice tea.png" alt="Lemon Ice Tea" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Lemon Ice Tea</h3>
+            <p class="drink-card__category">Lime Flavors</p>
+          </div>
+        </div>
+
+        <!-- 3. Coffee (Dup) -->
+        <div class="drink-card drink-card--dup">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/coffee.png" alt="Iced Coffee" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Cold Coffee</h3>
+            <p class="drink-card__category">Coffee</p>
+          </div>
+        </div>
+
+        <!-- 4. Chaas Soda (Dup) -->
+        <div class="drink-card drink-card--dup">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/chas soda.png" alt="Chaas Soda" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Chaas Soda</h3>
+            <p class="drink-card__category">Chaas Soda</p>
+          </div>
+        </div>
+
+        <!-- 5. Mojito (Dup) -->
+        <div class="drink-card drink-card--dup">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/mint mojito.png" alt="Fresh Mojito" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Mint Mojito</h3>
+            <p class="drink-card__category">Mojitos</p>
+          </div>
+        </div>
+
+        <!-- 6. Special Lassi (Dup) -->
+        <div class="drink-card drink-card--dup">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/sp. lassi.png" alt="Special Lassi" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Special Lassi</h3>
+            <p class="drink-card__category">Lassi</p>
+          </div>
+        </div>
+
+        <!-- 7. Special Coco (Dup) -->
+        <div class="drink-card drink-card--dup">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/sp. coco.png" alt="Special Coco" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Special Coco</h3>
+            <p class="drink-card__category">Coco</p>
+          </div>
+        </div>
+
+        <!-- 8. Rose Milkshake (Dup) -->
+        <div class="drink-card drink-card--dup">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/rose milk shake.png" alt="Rose Milkshake" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Rose Milkshake</h3>
+            <p class="drink-card__category">Milkshakes</p>
+          </div>
+        </div>
+
+        <!-- 9. Bournvita Milkshake (Dup) -->
+        <div class="drink-card drink-card--dup">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/bornvitta milk shake.png" alt="Bournvita Milkshake" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Bournvita Milkshake</h3>
+            <p class="drink-card__category">Milkshakes</p>
+          </div>
+        </div>
+
+        <!-- 10. Kiwi Crush (Dup) -->
+        <div class="drink-card drink-card--dup">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/kiwi crush soda.png" alt="Kiwi Crush" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Kiwi Crush</h3>
+            <p class="drink-card__category">Crush Items</p>
+          </div>
+        </div>
+
+        <!-- 11. Black Currant Crush (Dup) -->
+        <div class="drink-card drink-card--dup">
+          <div class="drink-card__img-wrap">
+            <img src="images/items images/item images/black current.png" alt="Black Currant Crush" class="drink-card__img" loading="lazy" />
+          </div>
+          <div class="drink-card__info">
+            <h3 class="drink-card__name">Black Currant Crush</h3>
+            <p class="drink-card__category">Crush Items</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MENU CATEGORIES SECTION
+       ============================================================ -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <span class="accent-line reveal"></span>
+      <h2 class="section-title reveal">Menu Categories</h2>
+      <p class="section-subtitle reveal">Explore our 9 signature drink categories</p>
+
+      <!-- Categories Grid (In-place Accordion) -->
+      <div class="menu__grid reveal-stagger" id="menu-categories-grid">
+        <!-- Category cards are injected dynamically by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY SECTION
+       ============================================================ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <span class="accent-line reveal"></span>
+      <h2 class="section-title reveal">Our Shop & Vibes</h2>
+      <p class="section-subtitle reveal">Step inside the Shree Ram Colddrinks experience</p>
+
+      <div class="gallery__grid reveal-stagger">
+        <div class="gallery__item reveal" data-img="images/shop images/shop image 1  (1).webp">
+          <img src="images/shop images/shop image 1  (1).webp" alt="Shree Ram Colddrinks shop interior" loading="lazy" />
+          <div class="gallery__caption">Shop Ambiance</div>
+          <span class="gallery__zoom">🔍</span>
+        </div>
+        <div class="gallery__item reveal" data-img="images/shop images/shop image 1  (2).webp">
+          <img src="images/shop images/shop image 1  (2).webp" alt="Shree Ram Colddrinks seating area" loading="lazy" />
+          <div class="gallery__caption">Cozy Seating</div>
+          <span class="gallery__zoom">🔍</span>
+        </div>
+        <div class="gallery__item reveal" data-img="images/shop images/shop image 1  (1).png">
+          <img src="images/shop images/shop image 1  (1).png" alt="Shree Ram Colddrinks shop counter" loading="lazy" />
+          <div class="gallery__caption">Fresh Preparation</div>
+          <span class="gallery__zoom">🔍</span>
+        </div>
+        <div class="gallery__item reveal" data-img="images/shop images/shop image 1  (2).png">
+          <img src="images/shop images/shop image 1  (2).png" alt="Shree Ram Colddrinks shop front" loading="lazy" />
+          <div class="gallery__caption">Welcome to Shree Ram</div>
+          <span class="gallery__zoom">🔍</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SYRUPS SECTION
+       ============================================================ -->
+  <section class="syrups" id="syrups">
+    <div class="container">
+      <span class="accent-line reveal"></span>
+      <h2 class="section-title reveal">Take Home Flavors</h2>
+      <p class="section-subtitle reveal">Our 13 signature pure sugar syrups — available in-store</p>
+
+      <!-- Carousel of 13 flavors (Full Width) -->
+      <div class="syrups__carousel-wrap reveal">
+        <button class="syrups__arrow syrups__arrow--left" id="syrupLeft" aria-label="Scroll left">‹</button>
+        <div class="syrups__carousel" id="syrupCarousel">
+          <!-- Each syrup card contains only the bottle image and the name, with no background containers or boxes -->
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/orange.png" alt="Orange Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Orange</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/kalakhatta.png" alt="Kala Khatta Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Kala Khatta</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/pineapple.png" alt="Pineapple Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Pineapple</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/gulaab.png" alt="Rose Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Rose</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/mango.png" alt="Mango Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Mango</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/butter scotch.png" alt="Butterscotch Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Butterscotch</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/13.png" alt="Vanilla Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Vanilla</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/cocolate.png" alt="Chocolate Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Chocolate</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/elaichi.png" alt="Elaichi Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Elaichi</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/jeera masala.png" alt="Jira Masala Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Jira Masala</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/kachi keri.png" alt="Kachi Keri Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Kachi Keri</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/mava malai.png" alt="Mava Malai Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Mava Malai</div>
+          </div>
+          <div class="syrup-card">
+            <div class="syrup-card__img-wrap">
+              <img src="images/bottles images/rajbhod.png" alt="Rajbhog Syrup Bottle" loading="lazy" class="syrup-card__img" />
+            </div>
+            <div class="syrup-card__name">Rajbhog</div>
+          </div>
+        </div>
+        <button class="syrups__arrow syrups__arrow--right" id="syrupRight" aria-label="Scroll right">›</button>
+      </div>
+
+      <!-- 4 Quality Elements Cards Row -->
+      <div class="syrups__quality-row reveal">
+        <!-- 1. 100% Pure Sugar -->
+        <div class="quality-card">
+          <div class="quality-card__icon-wrap">
+            <svg viewBox="0 0 24 24" class="quality-card__icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="quality-card__content">
+            <h4 class="quality-card__title">100% Pure Sugar</h4>
+            <p class="quality-card__desc">Made with premium refined sugar</p>
+          </div>
+        </div>
+        <!-- 2. ISO Certified -->
+        <div class="quality-card">
+          <div class="quality-card__icon-wrap">
+            <svg viewBox="0 0 24 24" class="quality-card__icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 11 2 2 4-4"/></svg>
+          </div>
+          <div class="quality-card__content">
+            <h4 class="quality-card__title">ISO Certified</h4>
+            <p class="quality-card__desc">Tested standards & hygiene</p>
+          </div>
+        </div>
+        <!-- 3. High Quality -->
+        <div class="quality-card">
+          <div class="quality-card__icon-wrap">
+            <svg viewBox="0 0 24 24" class="quality-card__icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="quality-card__content">
+            <h4 class="quality-card__title">High Quality</h4>
+            <p class="quality-card__desc">Carefully sourced ingredients</p>
+          </div>
+        </div>
+        <!-- 4. Safe for All Ages -->
+        <div class="quality-card">
+          <div class="quality-card__icon-wrap">
+            <svg viewBox="0 0 24 24" class="quality-card__icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="quality-card__content">
+            <h4 class="quality-card__title">Safe for All Ages</h4>
+            <p class="quality-card__desc">Anyone can enjoy our drinks</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="syrups__note reveal">
+        All syrups are <span>100% pure sugar</span> — Available in-store only
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2: INSTANT/READY ORDER ("Right Now Craving")
+       ============================================================ -->
+  <section class="order-section" id="instant-order-section">
+    <div class="container">
+      <span class="accent-line reveal"></span>
+      <h2 class="section-title reveal">Craving? Order Now</h2>
+      <p class="section-subtitle reveal">Order your favorite drinks fresh right now! Delivery within 2km or Store Pickup.</p>
+
+      <!-- Toggle Expand Button -->
+      <div class="order-toggle-btn-wrap reveal">
+        <button class="btn-order-toggle" id="btnOrderToggle">
+          <span class="btn-order-toggle__icon">🛒</span>
+          <span class="btn-order-toggle__text">Click Here to Order Online</span>
+          <span class="btn-order-toggle__arrow">▼</span>
+        </button>
+      </div>
+
+      <!-- Collapsible Wrapper -->
+      <div class="order-collapsible-wrapper" id="orderCollapsibleWrapper">
+
+      <!-- Delivery Status Banner (If Delivery is Toggle OFF) -->
+      <div class="delivery-status-banner" id="delivery-status-banner" style="display: none;">
+        <span class="delivery-status-icon">🛵</span>
+        <span class="delivery-status-text">We are currently accepting <strong>Pickup Orders Only</strong>. Online delivery is temporarily offline.</span>
+      </div>
+
+      <!-- Step 1: Location Gate -->
+      <div class="location-gate-card glass-panel" id="location-gate">
+        <h3 class="gate-title">🛵 Check Delivery Availability</h3>
+        <p class="gate-desc">We deliver fresh, ice-cold drinks directly to your doorstep within a <strong>2km radius</strong> of our Surat shop.</p>
+        
+        <div class="gate-actions">
+          <button class="btn-location-check" id="btn-use-gps">
+            <span class="btn-gps-icon">🎯</span> Check via GPS Location
+          </button>
+        </div>
+        
+        <div class="gps-status-message" id="gps-status" style="display: none;"></div>
+      </div>
+
+      <!-- GPS Success / Zone Status (Initially Hidden) -->
+      <div class="zone-status-card glass-panel" id="zone-status" style="display: none;">
+        <div class="zone-badge success" id="zone-badge-success" style="display: none;">
+          <span>✅ In Delivery Zone (<span id="detected-distance">0.0</span>km away)</span>
+        </div>
+        <div class="zone-badge warning" id="zone-badge-outside" style="display: none;">
+          <span>⚠️ Outside Delivery Zone (<span id="detected-distance-outside">0.0</span>km away)</span>
+          <p class="zone-note">Delivery is unavailable beyond 2km. You can still order for store pickup.</p>
+        </div>
+        <button class="btn-change-location" id="btn-change-loc">Change Location</button>
+      </div>
+
+      <!-- Step 2: Interactive Menu Selection & Cart (Initially Locked/Hidden unless checked or pickup-mode) -->
+      <div class="instant-order-flow" id="instant-order-flow" style="display: none;">
+        
+        <!-- Delivery vs Pickup Selector -->
+        <div class="order-mode-selector">
+          <label class="mode-option">
+            <input type="radio" name="orderMode" value="delivery" id="mode-delivery" checked />
+            <span class="mode-box">
+              <span class="mode-icon">🛵</span>
+              <span class="mode-label">Home Delivery</span>
+            </span>
+          </label>
+          <label class="mode-option" id="mode-pickup-option">
+            <input type="radio" name="orderMode" value="pickup" id="mode-pickup" />
+            <span class="mode-box">
+              <span class="mode-icon">🏪</span>
+              <span class="mode-label">Store Pickup</span>
+            </span>
+          </label>
+        </div>
+
+        <div class="instant-grid">
+          
+          <!-- Menu Categories Grid (Interactive Accordion) -->
+          <div class="instant-menu-container">
+            <h3 class="flow-section-title">Select Drinks</h3>
+            <div class="instant-categories-grid" id="instant-categories-grid">
+              <!-- Injected dynamically by JS -->
+            </div>
+          </div>
+
+          <!-- Cart Panel -->
+          <div class="instant-cart-panel glass-panel" id="instant-cart-panel">
+            <h3 class="flow-section-title">Your Order</h3>
+            
+            <div class="cart-items-list" id="cart-items-list">
+              <div class="cart-empty-message">
+                <span class="cart-empty-icon">🥤</span>
+                <p>Your cart is empty. Add drinks from the menu!</p>
+              </div>
+            </div>
+
+            <div class="cart-summary" id="cart-summary" style="display: none;">
+              <div class="cart-totals" id="cart-totals-container">
+                <div class="cart-total-row">
+                  <span>Total Drinks</span>
+                  <span id="cart-total-qty">0</span>
+                </div>
+                <div class="cart-total-row final">
+                  <span>Total Amount</span>
+                  <span id="cart-total-amount">₹0</span>
+                </div>
+              </div>
+
+              <!-- Checkout Fields -->
+              <form class="cart-form" id="cart-checkout-form">
+                <div class="form-group">
+                  <label for="cart-name">Your Name *</label>
+                  <input type="text" id="cart-name" class="form-input" placeholder="Enter name" maxlength="25" required />
+                </div>
+                <div class="form-group">
+                  <label for="cart-phone">Phone Number *</label>
+                  <input type="tel" id="cart-phone" class="form-input" placeholder="Enter 10-digit number" maxlength="10" pattern="[0-9]{10}" required />
+                </div>
+                
+                <div class="form-group" id="cart-address-group">
+                  <label for="cart-address">Delivery Address *</label>
+                  <textarea id="cart-address" class="form-input" placeholder="Confirm delivery address" rows="2" readonly></textarea>
+                </div>
+
+                <button type="submit" class="btn-checkout" id="btn-checkout-submit">
+                  Confirm &amp; Order on WhatsApp
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div> <!-- End order-collapsible-wrapper -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1: BULK ORDER / FUNCTION BOOKING
+       ============================================================ -->
+  <section class="order-section" id="bulk-order-section">
+    <div class="container">
+      <span class="accent-line reveal"></span>
+      <h2 class="section-title reveal">Bulk Order !!!</h2>
+      <p class="section-subtitle reveal">Serve our refreshing drinks to make your functions truly special</p>
+      <!-- Toggle Expand Button -->
+      <div class="order-toggle-btn-wrap reveal">
+        <button class="btn-order-toggle" id="btnBulkOrderToggle">
+          <span class="btn-order-toggle__icon">🎉</span>
+          <span class="btn-order-toggle__text">Click Here for Bulk Order</span>
+          <span class="btn-order-toggle__arrow">▼</span>
+        </button>
+      </div>
+
+      <!-- Collapsible Wrapper -->
+      <div class="bulk-collapsible-wrapper" id="bulkCollapsibleWrapper">
+
+      <form class="bulk-order-form glass-panel" id="bulk-order-form-el">
+        <h3 class="form-panel-title">🎉 Event / Bulk Catering Enquiry</h3>
+        <p class="form-panel-desc">Planning a wedding, birthday, corporate event, or family function? Fill in the details below. We offer special rates for bulk orders.</p>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="bulk-name">Your Name *</label>
+            <input type="text" id="bulk-name" name="name" class="form-input" placeholder="Enter your full name" maxlength="25" required />
+          </div>
+
+          <div class="form-group">
+            <label for="bulk-phone">Phone Number *</label>
+            <input type="tel" id="bulk-phone" name="phone" class="form-input" placeholder="Enter 10-digit phone number" maxlength="10" pattern="[0-9]{10}" required />
+          </div>
+
+          <div class="form-group">
+            <label for="bulk-function">Which Function *</label>
+            <input type="text" id="bulk-function" name="function" class="form-input" placeholder="e.g. Wedding, Birthday, Anniversary" required />
+          </div>
+
+          <div class="form-group">
+            <label for="bulk-glass-count">Avg Glass Count *</label>
+            <input type="number" id="bulk-glass-count" name="glass_count" class="form-input" placeholder="Min. order 50 glasses" min="1" required />
+          </div>
+
+          <div class="form-group">
+            <label>Event Date *</label>
+            <!-- Hidden original date input for form compatibility -->
+            <input type="date" id="bulk-date" name="date" style="display: none;" required />
+            <!-- Custom Datepicker UI -->
+            <div class="custom-datepicker" id="custom-datepicker-wrap">
+              <input type="text" id="custom-date-display" class="form-input" placeholder="Select event date" readonly />
+              <div class="datepicker-calendar" id="datepicker-calendar">
+                <div class="calendar-header">
+                  <button type="button" class="calendar-btn prev-month">&lt;</button>
+                  <span class="calendar-title" id="calendar-month-year">July 2026</span>
+                  <button type="button" class="calendar-btn next-month">&gt;</button>
+                </div>
+                <div class="calendar-weekdays">
+                  <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                </div>
+                <div class="calendar-days" id="calendar-days-grid">
+                  <!-- Generated by JS -->
+                </div>
+              </div>
+            </div>
+            <span class="date-hint" id="bulk-date-hint">Please book at least 1 day in advance</span>
+          </div>
+
+          <div class="form-group">
+            <label for="bulk-items">Drinks / Flavors Needed *</label>
+            <textarea id="bulk-items" name="items" class="form-input" placeholder="Specify flavors you're interested in (e.g. Lemon Tukda Soda, Mint Mojitos, Cold Coco, Rose Lassi...)" rows="2" required></textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="bulk-location">Event Location *</label>
+          <textarea id="bulk-location" name="location" class="form-input" placeholder="Exact venue address in Surat" rows="2" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="bulk-desc">Additional Notes (Optional)</label>
+          <textarea id="bulk-desc" name="notes" class="form-input" placeholder="Specify any custom requirements, timings, or ice preferences..." rows="2"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit-bulk" id="bulk-submit-btn">
+          Submit Inquiry
+        </button>
+
+        <!-- Success/Feedback Message -->
+        <div class="form-status-msg" id="bulk-form-status" style="display: none;"></div>
+      </form>
+      </div> <!-- End bulk-collapsible-wrapper -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LOCATION & TIMING SECTION
+       ============================================================ -->
+  <section class="location" id="location">
+    <div class="container">
+      <span class="accent-line reveal"></span>
+      <h2 class="section-title reveal">Find Us</h2>
+      <p class="section-subtitle reveal">Visit us or reach out anytime</p>
+
+      <div class="location__grid">
+        <div class="location__info reveal">
+          <div class="location__item">
+            <div class="location__icon">📍</div>
+            <div>
+              <div class="location__label">Address</div>
+              <div class="location__value">
+                KK Choksi Bulding, 9, opp. Tapibag 3,<br />
+                near Suman High School, Mohan ni Chawl,<br />
+                Surat, Gujarat 395006
+              </div>
+            </div>
+          </div>
+
+          <div class="location__item">
+            <div class="location__icon">🕐</div>
+            <div>
+              <div class="location__label">Opening Hours</div>
+              <div class="location__value">
+                Mon – Sun: 10:00 AM – 11:00 PM<br />
+                <strong style="color: var(--green);">Open All Days</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="location__item">
+            <div class="location__icon">📞</div>
+            <div>
+              <div class="location__label">Contact</div>
+              <div class="location__value">+91 94844 48489</div>
+            </div>
+          </div>
+
+          <div class="location__buttons">
+            <a href="https://wa.me/919484448489?text=Hi%20Shree%20Ram%20Colddrinks!%20I%20have%20a%20question." class="btn-whatsapp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="white"/></svg>
+              WhatsApp
+            </a>
+            <a href="tel:+919484448489" class="btn-call">
+              📞 Call Now
+            </a>
+          </div>
+        </div>
+
+        <div class="location__map reveal">
+          <iframe
+            src="https://maps.google.com/maps?q=21.2105071706219,72.85317595435777&z=17&output=embed"
+            width="600"
+            height="360"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Shree Ram Colddrinks Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <img src="images/shop images/logo.png" alt="Shree Ram Colddrinks Logo" class="footer__logo-img" />
+          </a>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/shreeramcolddrinks?igsh=MTg2NWMybXY2bjZs" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://wa.me/919484448489" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/share/1ErDMRzK3x/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#bestsellers">Bestsellers</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#syrups">Syrups</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Get In Touch</h4>
+          <div class="footer__links">
+            <a href="#location">Find Our Shop</a>
+            <a href="tel:+919484448489">+91 94844 48489</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2025 Shree Ram Colddrinks. All rights reserved.</span>
+        <span>Made with 💚 in BHARAT</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       LIGHTBOX OVERLAY
+       ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image lightbox">
+    <img src="" alt="" class="lightbox__img" id="lightboxImg" />
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close lightbox">✕</button>
+  </div>
+
+  <!-- ============================================================
+       CHATBOT WIDGET
+       ============================================================ -->
+  <button class="chatbot-fab" id="chatbotFab" aria-label="Open chat assistant">
+    <!-- Message icon -->
+    <svg class="chatbot-icon-msg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+  </button>
+
+  <div class="chatbot-window" id="chatbotWindow" role="dialog" aria-label="Chat assistant">
+    <div class="chatbot__header">
+      <div class="chatbot__avatar">
+        <img src="images/shop images/logo.png" alt="Shree Ram Logo" />
+      </div>
+      <div class="chatbot__header-info">
+        <h4>Chatbot</h4>
+      </div>
+    </div>
+
+    <div class="chatbot__messages" id="chatMessages">
+      <!-- Messages will be injected by JS -->
+    </div>
+
+    <div class="chatbot__quick-replies" id="quickReplies">
+      <!-- Quick reply buttons injected by JS -->
+    </div>
+
+    <div class="chatbot__input">
+      <input type="text" id="chatInput" placeholder="Type a question..." autocomplete="off" />
+      <button id="chatSend" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <script src="script.js"></script>
+</body>
+</html>
