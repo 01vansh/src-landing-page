@@ -135,8 +135,20 @@ document.addEventListener('DOMContentLoaded', () => {
       heroVideo.play().catch(err => console.log('Video loop replay error:', err));
     });
 
+    const triggerVideoPlay = () => {
+      heroVideo.play().then(() => {
+        // Clean up listeners once successfully playing
+        document.removeEventListener('click', triggerVideoPlay);
+        document.removeEventListener('touchstart', triggerVideoPlay);
+        document.removeEventListener('scroll', triggerVideoPlay);
+      }).catch(err => console.log('Video play deferred on interaction:', err));
+    };
+
     heroVideo.play().catch(err => {
-      console.log('Autoplay deferred until user interaction:', err);
+      console.log('Autoplay blocked (likely Low Power Mode), waiting for interaction:', err);
+      document.addEventListener('click', triggerVideoPlay, { passive: true });
+      document.addEventListener('touchstart', triggerVideoPlay, { passive: true });
+      document.addEventListener('scroll', triggerVideoPlay, { passive: true });
     });
   }
   // ────────────────────────────────────────────────────────────
